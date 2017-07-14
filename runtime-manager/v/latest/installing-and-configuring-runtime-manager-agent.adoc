@@ -73,7 +73,7 @@ You can also find the download links to older versions of the Runtime Manager ag
 
 == Installing the Agent from the Zip File
 
-. Stop Mule or the API Gateway runtime. You can stop Mule with the `./bin stop` command or by killing the process.
+. Stop Mule or the API Gateway runtime. You can stop Mule with the `./mule stop` command or by killing the process.
 . Expand the `mule-agent-[VERSION].zip` file to the `$MULE_HOME/bin` Mule software distribution folder.
 . When prompted, replace (overwrite) any conflicting files (`amc_setup` and `amc_setup.bat`).
 +
@@ -321,6 +321,7 @@ The steps to register a Mule runtime with an on-prem Runtime Manager are similar
 The steps are:
 
 . Log into an Anypoint Platform Private Cloud Edition account.
+. Ensure that you have correctly setup the DNS entry for your platfom. See link:/access-management/private-cloud-edition-features#dns-or-ip[DNS or IP]
 . Select a business group and environment into which you want to register the Mule runtime.
 . Within this particular environment, select *servers* from the left side navigation menu, then click the *Add Server* button.
 . Copy the registration command and paste it into the $MULE_HOME/bin folder of the Mule runtime you wish to register with this Runtime Manager environment. The registration command will have the syntax `./amc_setup -H <token> _server-name_`.

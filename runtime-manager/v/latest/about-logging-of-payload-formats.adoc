@@ -41,7 +41,7 @@ The Runtime Manager agent only passes on payload messages where the *Converted t
 |.odp	|OpenDocuemnt presentation document|	application/vnd.oasis.opendocument.presentation|	FALSE
 |.ods	|OpenDocuemnt spreadsheet document|	application/vnd.oasis.opendocument.spreadsheet|	FALSE
 |.odt	|OpenDocument text document|	application/vnd.oasis.opendocument.text|	FALSE
-|.vsd	|Microsft Visio	|application/vnd.visio|	FALSE
+|.vsd	|Microsoft Visio	|application/vnd.visio|	FALSE
 |.7z	|7-zip archive	|application/x-7z-compressed|	FALSE
 |.abw	|AbiWord document	|application/x-abiword|	FALSE
 |.bz	|BZip archive	|application/x-bzip|	FALSE
@@ -92,17 +92,19 @@ You may want to force the exclusion of certain formats from the external logs. T
 
 
 .Force exclusion on a specific application
+[source,yaml,linenums]
 ----
     mule.agent.tracking.service:
         globalTrackingLevel: DEBUG
         enabled: true
         trackedApplications:
             - appName: someApp
+              trackingLevel: DEBUG
               payloadExcluded: true
 ----
 
-
 .Force exclusion globally
+[source,yaml,linenums]
 ----
     mule.agent.tracking.service:
         globalTrackingLevel: DEBUG
@@ -118,16 +120,19 @@ Note that by doing this there's a risk of breaking the payload.
 
 
 .Force inclusion on a specific application
+[source,yaml,linenums]
 ----
     mule.agent.tracking.service:
         globalTrackingLevel: DEBUG
         enabled: true
         trackedApplications:
             - appName: someApp
+              trackingLevel: DEBUG
               forcePayloadInclusion: true
 ----
 
 .Force inclusion globally
+[source,yaml,linenums]
 ----
     mule.agent.tracking.service:
         globalTrackingLevel: DEBUG

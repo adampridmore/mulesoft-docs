@@ -544,6 +544,9 @@ A Mule flow is divided in two. The first portion of it is usually an inbound end
 
 Every time our subscription to `AccountUpdates` receives an event it executes the rest of the flow. In the case of this example it prints a message to the log at INFO level.
 
+* disableSessionInvalidation should be set as "false" (Default value is "false").
+* If you need to listen to multiple topics, we recommend you create a different configuration for each topic.
+
 ==== Examining the Events
 
 The event that gets pushed through the flows contains information about the Salesforce data that has changed, how it changes, and when. Usually the raw JSON that the subscription receives looks something like this:
@@ -685,6 +688,10 @@ A Mule flow is divided in two. The first portion of it is usually an inbound end
 
 Every time our subscription to `/u/TestStreaming` receives an event it executes the rest of the flow. In the case of this example it prints a message to the log at INFO level.
 
+* disableSessionInvalidation should be set as "false" (Default value is "false").
+* If you need to listen to multiple channels, we recommend you create a different configuration for each channel.
+
+
 ==== Examining the Events
 
 The event that gets pushed through the flows contains information about the Salesforce data that has changed, how it changes, and when. Usually the raw JSON that the subscription receives looks something like this:
@@ -734,7 +741,7 @@ If ALL or ONLY_NEW replay option is selected, then the replayId value is ignored
 
 ==== Push events to a streaming channel
 
-Salesforce offers to possiblity to push custom events to a specific streaming channel through the Rest API.
+Salesforce offers to possibility to push custom events to a specific streaming channel through the Rest API.
 The user can achieve this using link:https://workbench.developerforce.com/about.php[Workbench] or using this connector.
 
 You can use `push-generic-event` operation as follows:

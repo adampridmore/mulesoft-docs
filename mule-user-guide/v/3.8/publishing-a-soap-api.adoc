@@ -9,7 +9,7 @@ Mule runtime leverages the Apache open-source link:http://cxf.apache.org/docs/a
 
 Using the Mule link:/mule-user-guide/v/3.8/cxf-module-reference[CXF Component], you can also link:/mule-user-guide/v/3.8/securing-a-soap-api[enable WS-security], specify data bindings, and add interceptors to your CXF API.
 
-When sending requests to an external web service, using the link:https://developer.mulesoft.com/docs/display/current/Web+Service+Consumer[Web Service Consumer]﻿ instead of the CXF Module is recommended.
+When sending requests to an external web service, using the link:/mule-user-guide/v/3.8/web-service-consumer[Web Service Consumer]﻿ instead of the CXF Module is recommended.
 
 == Basic Anatomy
 
@@ -139,7 +139,7 @@ After adding business logic and running the API as a Mule application, you can a
 +
 To make SOAP requests to send to your SOAP API, use a free service such as link:http://www.soapui.org/[SoapUI] which automatically provides the SOAP message structure you need for each kind of request to the API.
 
-Alternatively, you can use a browser extension such as link:https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm[Postman] (Google Chrome), or the link:http://curl.haxx.se/[curl] command line utility to send SOAP requests. To use these, you must know the required structure of the requests.
+Alternatively, you can use a browser extension such as Postman (Google Chrome), or the link:http://curl.haxx.se/[curl] command line utility to send SOAP requests. To use these, you must know the required structure of the requests.
 ....
 [tab,title="Standalone XML"]
 ....
@@ -247,7 +247,7 @@ Otherwise, you can use Xpath expressions to parse parts of the payload when need
 ====
 To make SOAP requests to send to your SOAP API, use a free service such as link:http://www.soapui.org/[SoapUI] which automatically provides the SOAP message structure you need for each kind of request to the API.
 
-Alternatively, you can use a browser extension such as link:https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm[Postman] (Google Chrome), or the link:http://curl.haxx.se/[curl] command line utility to send SOAP requests. To use these, you must know the required structure of the requests.
+Alternatively, you can use a browser extension such as Postman (Google Chrome), or the link:http://curl.haxx.se/[curl] command line utility to send SOAP requests. To use these, you must know the required structure of the requests.
 ====
 ....
 ------
@@ -285,4 +285,3 @@ http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/
     </flow>
 </mule>
 ----
-

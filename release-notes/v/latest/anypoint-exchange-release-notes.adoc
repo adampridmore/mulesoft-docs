@@ -1,11 +1,13 @@
 = Anypoint Exchange Release Notes
 :keywords: release notes, exchange
 
-*September 24, 2016*
+*September 2016*
 
-We are excited to announce the general availability of the latest release of link:https://www.mulesoft.com/exchange#!/[Anypoint Exchange]. This product enables Anypoint Platform users to publish and access Mule-related content within their own organization increasing visibility and reuse.
+We are pleased to announce the availability of the latest release of Anypoint Exchange. This product enables Anypoint Platform users to publish and access Mule-related content within their own organization increasing visibility and reuse.
 
-*Guide:* link:/getting-started/anypoint-exchange[Anypoint Exchange]
+*Guide:*
+link/getting-started/anypoint-exchange[Anypoint Exchange]
+
 
 == Version 1.7.1 - September 2016 Release
 
